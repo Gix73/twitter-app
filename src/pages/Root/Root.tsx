@@ -26,6 +26,7 @@ import {
   NavItem,
   FooterLink,
   NavList,
+  Signature,
 } from "./styled";
 import { NavLink } from "react-router-dom";
 
@@ -75,7 +76,7 @@ const Root: FC = () => {
           </AgreeRule>
           <HaveAccount>
             {haveAccountText}
-            <TextLink to="#">{haveAccountLink}</TextLink>
+            <TextLink to="logIn">{haveAccountLink}</TextLink>
           </HaveAccount>
         </Main>
       </Container>
@@ -87,6 +88,9 @@ const Root: FC = () => {
                 <FooterLink to={path}>{name}</FooterLink>
               </NavItem>
             ))}
+            <NavItem>
+              <Signature>{company}</Signature>
+            </NavItem>
           </NavList>
         </FooterNav>
       </Footer>

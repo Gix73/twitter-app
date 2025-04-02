@@ -46,7 +46,7 @@ export const Button = css`
   align-items: center;
   cursor: pointer;
   border-radius: 50px;
-  border: 2px solid rgb(228, 234, 237);
+  border: 2px solid #e4eaed;
   background: transparent;
   transition: 0.2s;
   color: black;
@@ -130,4 +130,9 @@ export const FooterLink = styled(NavLink)`
   &:hover {
     color: blue;
   }
+`;
+
+export const Signature = styled.span`
+  font-size: 14px;
+  color: black;
 `;
