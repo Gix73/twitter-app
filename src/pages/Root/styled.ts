@@ -71,7 +71,7 @@ export const GoogleButtonImg = styled.img`
   height: 25px;
 `;
 
-export const EmailButton = styled.button`
+export const EmailButton = styled(NavLink)`
   ${Button}
   margin-top: 21px;
 `;

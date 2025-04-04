@@ -64,7 +64,7 @@ const Root: FC = () => {
             <GoogleButtonImg alt="google icon" src={googleIcon} />
             {googleSignUp}
           </GoogleButton>
-          <EmailButton>{emailSignUp}</EmailButton>
+          <EmailButton to="/SignUp">{emailSignUp}</EmailButton>
           <AgreeRule>
             {agreeText[0]}
             <TextLink to={agreeLinks[0].path}>{agreeLinks[0].name}</TextLink>
